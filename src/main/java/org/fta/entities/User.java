@@ -19,5 +19,5 @@ public class User {
     private List<Expense> expenses;
 
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true)
-    private List<Category> customCategories;
+    private List<CustomCategory> customCategories;
 }

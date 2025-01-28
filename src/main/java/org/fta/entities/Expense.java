@@ -22,8 +22,12 @@ public class Expense {
     private LocalDateTime expenseDateTime;
 
     @ManyToOne
-    @JoinColumn(name = "category_id", nullable = false)
-    private Category expenseCategory;
+    @JoinColumn(nullable = true, name = "custom_category_id")
+    private CustomCategory customCategory;
+
+    @ManyToOne
+    @JoinColumn(nullable = true, name = "default_category_id")
+    private DefaultCategory defaultCategory;
 
     @Column(nullable = false)
     private BigDecimal expenseAmount;

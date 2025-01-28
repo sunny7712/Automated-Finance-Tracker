@@ -2,7 +2,6 @@ package org.fta.dto;
 
 
 import lombok.Data;
-import org.fta.entities.Category;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
