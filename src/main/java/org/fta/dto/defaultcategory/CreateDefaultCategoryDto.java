@@ -1,9 +1,9 @@
-package org.fta.dto;
+package org.fta.dto.defaultcategory;
 
 import lombok.Data;
 
 @Data
-public class DefaultCategoryDto {
+public class CreateDefaultCategoryDto {
     private String categoryName;
     private String description;
 }

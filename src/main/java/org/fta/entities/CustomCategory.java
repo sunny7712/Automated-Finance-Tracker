@@ -14,7 +14,7 @@ public class CustomCategory {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    @Column(nullable = false, unique = true)
+    @Column(nullable = false, unique = false)
     private String categoryName;
 
     @Column(nullable = true)
